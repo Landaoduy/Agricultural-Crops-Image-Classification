@@ -20,3 +20,5 @@ Implemented and compared 4 different architectures:
    * MobileNetV2 for efficient mobile deployment
    * ResNet50V2 for robust feature extraction
    * EfficientNetB3 for state-of-the-art performance
+
+**2. Transfer Learning Pipeline:** Leveraged ImageNet pre-trained weights with custom classification heads, frozen backbone training followed by fine-tuning optimization
