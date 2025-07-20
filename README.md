@@ -26,3 +26,14 @@
   * **Evaluation:** Rigorous performance assessment using accuracy and F1-score metrics with detailed per-class analysis
     
   * **Summary of the performance achieved:** **EfficientNetB3** achieved the highest performance with **81% validation accuracy**, outperforming **ResNet50V2 (78%)**, **MobileNetV2 (72%)**, demonstrating the effectiveness of transfer learning for agricultural crop classification.
+
+## Summary of Workdone:
+
+### Data:
+
+* Dataset Statistics:
+  * Total Images: 759
+  * Training Set: 608 images (80%)
+  * Validation Set: 151 images (20%)
+  * Image Resolution: 224×224 (300×300 for EfficientNet)
+  * Classes: 30 agricultural crop types
