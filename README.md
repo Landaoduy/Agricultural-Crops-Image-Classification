@@ -12,18 +12,17 @@
 
 * **Task Definition:** Develop an automated crop identification system capable of classifying 30 different agricultural crop types from images. This computer vision task addresses critical needs in precision agriculture, crop monitoring, and agricultural automation by enabling rapid, accurate identification of crops in various field conditions.
 
-* **My Approach:** 
-
-**1. Multi-Model Strategy:**
-Implemented and compared 3 different architectures:
-   * MobileNetV2 for efficient mobile deployment
-   * ResNet50V2 for robust feature extraction
-   * EfficientNetB3 for state-of-the-art performance
-
-**2. Transfer Learning Pipeline:** Leveraged ImageNet pre-trained weights with custom classification heads, frozen backbone training followed by fine-tuning optimization
-
-**3. Data Enhancement:** Comprehensive augmentation strategy including geometric transformations, color adjustments, and noise injection to improve model robustness and generalization
-
-**4. Evaluation:** Rigorous performance assessment using accuracy and F1-score metrics with detailed per-class analysis
-
-* **Summary of the performance achieved:** **EfficientNetB3** achieved the highest performance with **81%** validation accuracy, outperforming **ResNet50V2** (78%), **MobileNetV2** (72%), demonstrating the effectiveness of transfer learning for agricultural crop classification.
+* **My Approach:**
+  * **Multi-Model Strategy:**
+    Implemented and compared 3 different architectures:
+    * MobileNetV2 for efficient mobile deployment
+    * ResNet50V2 for robust feature extraction
+    * EfficientNetB3 for state-of-the-art performance
+      
+  * **Transfer Learning Pipeline:** Leveraged ImageNet pre-trained weights with custom classification heads, frozen backbone training followed by fine-tuning optimization
+    
+  * **Data Enhancement:** Comprehensive augmentation strategy including geometric transformations, color adjustments, and noise injection to improve model robustness and generalization
+    
+  * **Evaluation:** Rigorous performance assessment using accuracy and F1-score metrics with detailed per-class analysis
+    
+  * **Summary of the performance achieved:** **EfficientNetB3** achieved the highest performance with **81%** validation accuracy, outperforming **ResNet50V2** (78%), **MobileNetV2** (72%), demonstrating the effectiveness of transfer learning for agricultural crop classification.
