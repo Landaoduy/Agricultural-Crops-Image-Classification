@@ -80,5 +80,4 @@
 * **Bar plot of Class Distribution**
 <img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/e7f3264c-cb6d-4345-8b6e-e5ce1bdde93e" />
 
-
-  
+### Problem Formulation
