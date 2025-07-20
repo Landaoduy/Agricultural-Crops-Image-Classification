@@ -67,10 +67,12 @@
       * 224×224 for MobileNetV2 and ResNet50V2
         
       * 300×300 for EfficientNetB3
-
+        
     * Batch size set to:
       * 16 for MobileNetV2 and ResNet50V2
       * 10 for EfficientNetB3
 
-* **Data Visualization**
+### Data Visualization
+<img width="793" height="812" alt="image" src="https://github.com/user-attachments/assets/19955d4a-0f7d-40ab-b24f-82417fecb28a" />
+
   
