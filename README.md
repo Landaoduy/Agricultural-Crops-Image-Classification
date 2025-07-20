@@ -2,7 +2,7 @@
 
 # Agricultural-Crops-Image-Classification
 
-* This project aims to classify images of 30 different agricultural crops using deep learning techniques. I built and evaluated both a custom CNN and multiple pre-trained transfer learning models including **MobileNetV2**, **ResNet50V2**, and **EfficientNetB3**.
+* This project aims to classify images of 30 different agricultural crops using deep learning techniques. I built and evaluated multiple pre-trained transfer learning models including **MobileNetV2**, **ResNet50V2**, and **EfficientNetB3**.
   
 * The goal is to explore model performance across architectures and improve classification accuracy for agricultural applications.
 
@@ -15,10 +15,13 @@
 **My Approach:** 
 
 **1. Multi-Model Strategy:**
-Implemented and compared 4 different architectures:
-   * Custom CNN with ResNet-inspired residual connections
+Implemented and compared 3 different architectures:
    * MobileNetV2 for efficient mobile deployment
    * ResNet50V2 for robust feature extraction
    * EfficientNetB3 for state-of-the-art performance
 
 **2. Transfer Learning Pipeline:** Leveraged ImageNet pre-trained weights with custom classification heads, frozen backbone training followed by fine-tuning optimization
+
+**3. Data Enhancement:** Comprehensive augmentation strategy including geometric transformations, color adjustments, and noise injection to improve model robustness and generalization
+
+**4. Evaluation:** 
