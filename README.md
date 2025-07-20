@@ -43,7 +43,7 @@
  
 ### Preprocessing:
 
-* Image Cleaning:
+* **Image Cleaning**
   * Removed corrupted or unreadable files using a lightweight JFIF header check:
     
     * Opened each image in binary mode and verified that "JFIF" was present in the header
@@ -55,3 +55,22 @@
         is_jfif = b"JFIF" in fobj.peek(10)
       ```
     * This resulted in a clean dataset of 759 usable images
+
+* **Image Loading and Resizing**
+  * Used image_dataset_from_directory to:
+    
+    * Automatically infer labels from subfolder names
+      
+    * Shuffle and split into 80% training and 20% validation using validation_split
+      
+    * Resize images to:
+      * 224×224 for MobileNetV2 and ResNet50V2
+        
+      * 300×300 for EfficientNetB3
+
+    * Batch size set to:
+      * 16 for MobileNetV2 and ResNet50V2
+      * 10 for EfficientNetB3
+
+* **Data Visualization**
+  
