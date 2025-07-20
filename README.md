@@ -5,3 +5,5 @@
 * This project aims to classify images of 30 different agricultural crops using deep learning techniques. I built and evaluated both a custom CNN and multiple pre-trained transfer learning models including **MobileNetV2**, **ResNet50V2**, and **EfficientNetB3**.
   
 * The goal is to explore model performance across architectures and improve classification accuracy for agricultural applications.
+
+* Kaggle Link: https://www.kaggle.com/datasets/mdwaquarazam/agricultural-crops-image-classification
