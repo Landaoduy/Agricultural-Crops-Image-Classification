@@ -45,9 +45,13 @@
 
 * Image Cleaning:
   * Removed corrupted or unreadable files using a lightweight JFIF header check:
+    
     * Opened each image in binary mode and verified that "JFIF" was present in the header
+      
     * Invalid or unreadable images were skipped and deleted to prevent model training issues
+      
       ```sh
       with open(fpath, "rb") as fobj:
         is_jfif = b"JFIF" in fobj.peek(10)
       ```
+    * This resulted in a clean dataset of 759 usable images
