@@ -6,4 +6,4 @@
   
 * The goal is to explore model performance across architectures and improve classification accuracy for agricultural applications.
 
-* Kaggle Link: https://www.kaggle.com/datasets/mdwaquarazam/agricultural-crops-image-classification
+* Kaggle Dataset Link: https://www.kaggle.com/datasets/mdwaquarazam/agricultural-crops-image-classification
