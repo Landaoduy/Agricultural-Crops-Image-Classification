@@ -73,6 +73,12 @@
       * 10 for EfficientNetB3
 
 ### Data Visualization
+
+* **Image and Labels of crops**
 <img width="793" height="812" alt="image" src="https://github.com/user-attachments/assets/19955d4a-0f7d-40ab-b24f-82417fecb28a" />
+
+* **Bar plot of Class Distribution**
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/e7f3264c-cb6d-4345-8b6e-e5ce1bdde93e" />
+
 
   
