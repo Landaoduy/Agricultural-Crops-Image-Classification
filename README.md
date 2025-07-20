@@ -25,4 +25,4 @@
     
   * **Evaluation:** Rigorous performance assessment using accuracy and F1-score metrics with detailed per-class analysis
     
-  * **Summary of the performance achieved:** **EfficientNetB3** achieved the highest performance with **81%** validation accuracy, outperforming **ResNet50V2** (78%), **MobileNetV2** (72%), demonstrating the effectiveness of transfer learning for agricultural crop classification.
+  * **Summary of the performance achieved:** **EfficientNetB3** achieved the highest performance with **81% validation accuracy**, outperforming **ResNet50V2 (78%)**, **MobileNetV2 (72%)**, demonstrating the effectiveness of transfer learning for agricultural crop classification.
