@@ -24,4 +24,4 @@ Implemented and compared 3 different architectures:
 
 **3. Data Enhancement:** Comprehensive augmentation strategy including geometric transformations, color adjustments, and noise injection to improve model robustness and generalization
 
-**4. Evaluation:** 
+**4. Evaluation:** Rigorous performance assessment using accuracy and F1-score metrics with detailed per-class analysis
