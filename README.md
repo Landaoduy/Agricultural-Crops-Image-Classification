@@ -195,6 +195,10 @@
 
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/39864308-551b-4bf7-9462-0b28b2ee4f05" />
 
+* **Image Prediction Using EfficientNetB3**
+  <img width="1063" height="344" alt="image" src="https://github.com/user-attachments/assets/1a8e3576-80e7-4ed8-b42e-a1b282140366" />
+
+
 ### Conclusion
 
 * MobileNetV2 offered solid performance, ideal for mobile or embedded systems
