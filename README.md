@@ -81,3 +81,22 @@
 <img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/e7f3264c-cb6d-4345-8b6e-e5ce1bdde93e" />
 
 ### Problem Formulation
+
+* **Data Augmentation**
+  * Applied on-the-fly augmentation using a Keras Sequential pipeline to improve generalization:
+    
+    ```sh
+    data_augmentation = keras.Sequential([
+    layers.RandomFlip("horizontal"),
+    layers.RandomRotation(0.15),
+    layers.RandomZoom(0.15),
+    layers.RandomTranslation(0.1, 0.1),
+    layers.RandomContrast(0.2),
+    layers.RandomBrightness(0.1),
+    layers.GaussianNoise(0.02),
+    ])
+    ```
+  * Applied dynamically to each training batch using the .map() method
+    
+  * Ensured diverse representations of crops under different lighting, positioning, and noise conditions
+
