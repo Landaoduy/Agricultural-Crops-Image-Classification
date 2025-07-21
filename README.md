@@ -1,3 +1,4 @@
+
 ![UTA-DataScience-Logo](https://github.com/user-attachments/assets/6d626bcc-5430-4356-927b-97764939109d)
 
 # Agricultural-Crops-Image-Classification
@@ -170,4 +171,12 @@
 | Epochs                | 50–60                         |
 | Batch Size            | 10 (Mobile, ResNet), 16 (EfficientNet)   |
 
+#### **Learning Scheduling and Regularization**
 
+* **ReduceLROnPlateau:** Halve LR when validation loss plateaus
+
+* **EarlyStopping:** Stop training when no improvement after 7–8 epochs
+
+* **ModelCheckpoint:** Save the best model (lowest val_loss)
+
+### Performance Comparison
