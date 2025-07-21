@@ -180,11 +180,25 @@
 * **ModelCheckpoint:** Save the best model (lowest val_loss)
 
 ### Performance Comparison
+
 | Model              | Validation Accuracy | Precision (Weighted) | Recall (Weighted) | F1-Score (Weighted) |
 | ------------------ | ------------------- | -------------------- | ----------------- | ------------------- |
 | **EfficientNetB3** | **81%**             | **82%**              | **81%**           | **80%**             |
 | ResNet50V2         | 78%                 | 78%                  | 78%               | 77%                 |
 | MobileNetV2        | 72%                 | 76%                  | 72%               | 72%                 |
 
+Top Performing Classes:
+
+Perfect Classification: Coconut, Mustard-oil, Sunflower (100% accuracy)
+Strong Performance: Lemon, Clove, Tea, Pineapple (>85% accuracy)
+Challenging Classes: Sugarcane, Vigna-radiati, Tomato
+
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/39864308-551b-4bf7-9462-0b28b2ee4f05" />
 
+### Conclusion
+
+* MobileNetV2 offered solid performance, ideal for mobile or embedded systems
+
+* ResNet50V2 showed strong feature extraction capabilities and improved class recall
+
+* EfficientNetB3 outperformed all other models, achieving 81% validation accuracy, with high F1-scores and balanced performance across classes
