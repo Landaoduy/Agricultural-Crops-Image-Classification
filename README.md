@@ -187,11 +187,11 @@
 | ResNet50V2         | 78%                 | 78%                  | 78%               | 77%                 |
 | MobileNetV2        | 72%                 | 76%                  | 72%               | 72%                 |
 
-Top Performing Classes:
 
-Perfect Classification: Coconut, Mustard-oil, Sunflower (100% accuracy)
-Strong Performance: Lemon, Clove, Tea, Pineapple (>85% accuracy)
-Challenging Classes: Sugarcane, Vigna-radiati, Tomato
+* **Top Performing Classes**:
+  * Perfect Classification: Coconut, Mustard-oil, Sunflower (100% accuracy)
+  * Strong Performance: Lemon, Clove, Tea, Pineapple (>85% accuracy)
+  * Challenging Classes: Sugarcane, Vigna-radiati, Tomato
 
 <img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/39864308-551b-4bf7-9462-0b28b2ee4f05" />
 
@@ -202,3 +202,16 @@ Challenging Classes: Sugarcane, Vigna-radiati, Tomato
 * ResNet50V2 showed strong feature extraction capabilities and improved class recall
 
 * EfficientNetB3 outperformed all other models, achieving 81% validation accuracy, with high F1-scores and balanced performance across classes
+
+### Future Work
+
+* Fine-tuning: Implement gradual unfreezing for transfer learning models
+  
+* Ensemble Methods: Combine multiple models for improved accuracy
+  
+* Advanced Augmentation: Implement Mixup, CutMix, or AutoAugment
+
+* Multi-view Images: Include multiple angles/conditions for each crop
+
+### Reproduce the results
+
