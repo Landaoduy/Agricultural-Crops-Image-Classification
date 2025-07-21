@@ -215,3 +215,35 @@
 
 ### Reproduce the results
 
+#### **Clone the repository**
+```sh
+git clone https://github.com/Landaoduy/Agricultural-Crops-Image-Classification.git
+cd Agricultural-Crops-Image-Classification
+```
+
+#### **Install requirement packages**
+```sh
+pip install tensorflow matplotlib pandas scikit-learn seaborn
+```
+
+#### Download Dataset Using Kaggle API
+
+* Create a Kaggle account and get your kaggle.json API token from: https://www.kaggle.com/account
+
+* Place kaggle.json in the directory: ~/.kaggle/kaggle.json
+
+* The dataset will be automatically downloaded and extracted when you run the 1_DataLoader.ipynb notebook
+
+#### Run the notebook in order
+| Notebook                                  | Purpose                                              |
+| ----------------------------------------- | ---------------------------------------------------- |
+| `1_DataLoader.ipynb`                      | Downloads and unzips the dataset                     |
+| `2_Data_Initializing_Preprocessing.ipynb` | Cleans and prepares image data                       |
+| `3_Data_Visualization.ipynb`              | Visualize class distribution and sample images       |
+| `4_DataAugmentation.ipynb`                | Applies data augmentation and prefetching            |
+| `5_Aug_CNN_Model.ipynb`                   | Baseline CNN training                                |
+| `6_MobileNetV2.ipynb`                     | Train MobileNetV2                                    |
+| `7_ResNet50V2.ipynb`                      | Train ResNet50V2                                     |
+| `8_EfficientNetB3.ipynb`                  | Train EfficientNetB3                                 |
+| `9_Comparison_&_Prediction.ipynb`         | Compare model results and make prediction            |
+
