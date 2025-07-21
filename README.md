@@ -23,7 +23,7 @@
     
   * **Data Enhancement:** Comprehensive augmentation strategy including geometric transformations, color adjustments, and noise injection to improve model robustness and generalization
     
-  * **Evaluation:** Rigorous performance assessment using accuracy and F1-score metrics with detailed per-class analysis
+  * **Evaluation:** Rigorous performance assessment using accuracy, precision, recall and F1-score metrics with detailed per-class analysis
 
 * **Summary of the performance achieved:** **EfficientNetB3** achieved the highest performance with **81% validation accuracy**, outperforming **ResNet50V2 (78%)**, **MobileNetV2 (72%)**, demonstrating the effectiveness of transfer learning for agricultural crop classification.
 
@@ -109,6 +109,29 @@
     validation_ds = validation_ds.prefetch(tf.data.AUTOTUNE)
     ```
 #### Model Architecture
+* **Custom CNN Model (baseline)**
+  * Inspired by Xception-style separable convolutions with residual connections
+    
+  * Includes:
+    * Rescaling layer
+    * SeparableConv2D → BatchNorm → ReLU blocks
+    * MaxPooling + residual path via Conv2D
+    * Global Average Pooling + Dropout
+    * Final classifier: Dense → Dropout → Softmax (30 classes)
+      
+  * Accuracy: ~30%
 
+* **MobileNetV2**
+  * Lightweight architecture ideal for mobile/edge deployment
+    
+  * ImageNet pre-trained, frozen base with custom classifier head
+    
+  * Classifier includes:
+    * Global Average Pooling
+    * Dense (512 to 128)
+    * BatchNorm, Dropout
+    * Softmax for 30 classes
+  
+  * Accuracy: 72%
   
 
