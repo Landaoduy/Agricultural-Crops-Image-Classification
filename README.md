@@ -154,7 +154,20 @@
   * **Best performing model**: 81% accuracy, robust across all classes
 <img width="585" height="455" alt="image" src="https://github.com/user-attachments/assets/259bbd05-2348-4ea2-8acc-01248c5dc3de" />
 
+### Training
 
+#### **Approach**
+* Pretrained on ImageNet
 
-  
+* Initially froze backbone to train only classifier head
+
+#### **Hyperparameters**
+| Parameter             | Value                         |
+| --------------------- | ----------------------------- |
+| Optimizer             | Adam                          |
+| Initial Learning Rate | 3e-4                          |
+| Loss Function         | SparseCategoricalCrossentropy |
+| Epochs                | 50–60                         |
+| Batch Size            | 10 (Mobile, ResNet), 16 (EfficientNet)   |
+
 
