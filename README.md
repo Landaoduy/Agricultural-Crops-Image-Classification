@@ -82,7 +82,7 @@
 
 ### Problem Formulation
 
-* **Data Augmentation**
+#### Data Augmentation
   * Applied on-the-fly augmentation using a Keras Sequential pipeline to improve generalization:
     
     ```sh
@@ -100,7 +100,7 @@
     
   * Ensured diverse representations of crops under different lighting, positioning, and noise conditions
 
-* **Prefetching**
+#### Prefetching
   * Used tf.data.AUTOTUNE to prefetch batches and optimize GPU utilization
     
   * This minimizes input pipeline bottlenecks during training:
@@ -108,6 +108,7 @@
     train_ds = train_ds.prefetch(tf.data.AUTOTUNE)
     validation_ds = validation_ds.prefetch(tf.data.AUTOTUNE)
     ```
-* **Model Architecture**
+#### Model Architecture
+
   
 
