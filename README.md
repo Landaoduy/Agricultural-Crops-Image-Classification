@@ -131,7 +131,30 @@
     * Dense (512 to 128)
     * BatchNorm, Dropout
     * Softmax for 30 classes
-  
-  * Accuracy: 72%
+      
+  * Validation Accuracy: 72%
+<img width="576" height="455" alt="image" src="https://github.com/user-attachments/assets/757d9165-288d-4792-ae74-35d82969e8f1" />
+
+* **ResNet50V2**
+  * Deep residual network with skip connections
+    
+  * Frozen base backbone; only custom classification layers trained
+    
+  * Strong spatial feature learning via deeper layers
+<img width="574" height="455" alt="image" src="https://github.com/user-attachments/assets/1072cf36-6dc7-47db-9b40-dee22f7a4f29" />
+
+* **EfficientNetB3**
+  *State-of-the-art architecture with compound scaling (depth, width, resolution)
+
+  * Input size increased to 300×300 to leverage resolution scaling
+    
+  * Custom classification head with:
+    * Dense (512 → 256), BatchNorm, Dropout
+      
+  * **Best performing model**: 81% accuracy, robust across all classes
+<img width="585" height="455" alt="image" src="https://github.com/user-attachments/assets/259bbd05-2348-4ea2-8acc-01248c5dc3de" />
+
+
+
   
 
