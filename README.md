@@ -2,7 +2,7 @@
 
 # Agricultural-Crops-Image-Classification
 
-* This project aims to classify images of 30 different agricultural crops using deep learning techniques. I built and evaluated multiple pre-trained transfer learning models including **MobileNetV2**, **ResNet50V2**, and **EfficientNetB3**.
+* This project aims to classify images of 30 different agricultural crops using deep learning techniques. I built and evaluated a customed CNN Model, multiple pre-trained transfer learning models including **MobileNetV2**, **ResNet50V2**, and **EfficientNetB3**.
   
 * The goal is to explore model performance across architectures and improve classification accuracy for agricultural applications.
 
@@ -99,4 +99,15 @@
   * Applied dynamically to each training batch using the .map() method
     
   * Ensured diverse representations of crops under different lighting, positioning, and noise conditions
+
+* **Prefetching**
+  * Used tf.data.AUTOTUNE to prefetch batches and optimize GPU utilization
+    
+  * This minimizes input pipeline bottlenecks during training:
+    ```sh
+    train_ds = train_ds.prefetch(tf.data.AUTOTUNE)
+    validation_ds = validation_ds.prefetch(tf.data.AUTOTUNE)
+    ```
+* **Model Architecture**
+  
 
