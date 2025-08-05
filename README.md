@@ -1,7 +1,7 @@
 
 ![UTA-DataScience-Logo](https://github.com/user-attachments/assets/6d626bcc-5430-4356-927b-97764939109d)
 
-# Agricultural-Crops-Image-Classification
+# Agricultural Crops Image Classification
 
 * This project aims to classify images of 30 different agricultural crops using deep learning techniques. I built and evaluated a customed CNN Model, multiple pre-trained transfer learning models including **MobileNetV2**, **ResNet50V2**, and **EfficientNetB3**.
   
